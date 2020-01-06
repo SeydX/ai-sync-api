@@ -177,7 +177,6 @@ AISyncApi.prototype.deviceStatus = function(device, callback) {
 }
 
 AISyncApi.prototype.fanOnOff = function(device, value, callback) {
-
   this.WSsend({
     "device": device,
     "request": "set",
@@ -185,8 +184,6 @@ AISyncApi.prototype.fanOnOff = function(device, value, callback) {
   }, function(data) {
     callback(null);
   })
-
-  
 }
 
 AISyncApi.prototype.fanSpeed = function(device, value, callback) {
@@ -194,6 +191,16 @@ AISyncApi.prototype.fanSpeed = function(device, value, callback) {
     "device": device,
     "request": "set",
     "data": {"H02": value}
+  }, function(data) {
+    callback(null);
+  })
+}
+
+AISyncApi.prototype.lightOnOff = function(device, value, callback) {
+  this.WSsend({
+    "device": device,
+    "request": "set",
+    "data": {"H0B": value}
   }, function(data) {
     callback(null);
   })
