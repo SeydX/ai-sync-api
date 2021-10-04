@@ -1,25 +1,36 @@
 {
-  "name": "ai-sync-api",
-  "version": "0.0.2",
+  "name": "@seydx/ai-sync-api",
+  "version": "1.0.0-beta.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --fix ."
   },
   "author": "Wylan Swets",
   "license": "ISC",
   "dependencies": {
-    "events": "^3.0.0",
-    "request": "^2.88.0",
-    "util": "^0.12.1",
-    "ws": "^7.2.1"
+    "debug": "^4.3.2",
+    "events": "^3.3.0",
+    "request": "^2.88.2",
+    "util": "^0.12.4",
+    "ws": "^7.5.5"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.5",
+    "@babel/eslint-parser": "7.15.7",
+    "@babel/eslint-plugin": "7.14.5",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wylanswets/ai-sync-api.git"
+    "url": "git+https://github.com/seydx/ai-sync-api.git"
   },
   "bugs": {
-    "url": "https://github.com/wylanswets/ai-sync-api/issues"
+    "url": "https://github.com/seydx/ai-sync-api/issues"
   },
-  "homepage": "https://github.com/wylanswets/ai-sync-api#readme",
-  "description": ""
+  "homepage": "https://github.com/seydx/ai-sync-api#readme",
+  "description": "Ai Sync API"
 }
